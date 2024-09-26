@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# TRON Transfer DApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a decentralized application (DApp) built on the TRON network. It allows users to transfer TRC-20 tokens using their TronLink wallet. The front end is built with JavaScript, and users can interact with a smart contract using the provided interface.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Token Transfers**: Users can easily transfer TRC-20 tokens.
+- **TronLink Wallet Detection**: The app checks if the user has TronLink installed.
+- **TRC-20 Token Interaction**: The app supports interactions with any TRC-20 token on the TRON network.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Before you begin, ensure you have met the following requirements:
 
-### `npm test`
+- You have Node.js installed. Download it from [Node.js Official Website](https://nodejs.org/).
+- You have a TRON Wallet (TronLink) installed. Download it from [TronLink Official Website](https://www.tronlink.org/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Clone the Repository
 
-### `npm run build`
+To get a local copy of the project up and running, follow these simple steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Open your terminal and navigate to the folder where you want to clone the repository.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Run the following command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/your-repository-name.git
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Change to the Project's Directory
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To change to the project's directory, run the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd your-repository-name
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Install Dependencies
 
-## Learn More
+To install the required packages and dependencies, run the following command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+After installation is complete, run the following command to start the application:
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application should now be running at [http://localhost:3000/](http://localhost:3000/).
 
-### Analyzing the Bundle Size
+## Adding TRC-20 Token to TronLink Wallet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To interact with the custom TRC-20 token on the TRON network, you need to add the token to your TronLink wallet. Follow these steps to add a custom TRC-20 token:
 
-### Making a Progressive Web App
+### Step 1: Open TronLink Wallet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Open the TronLink browser extension or mobile app.
 
-### Advanced Configuration
+### Step 2: Navigate to the "Assets" Section
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+In your TronLink wallet, click on the "Assets" tab to view the list of tokens in your wallet.
 
-### Deployment
+### Step 3: Add a New Token
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Scroll down to the bottom of your token list and click on "+" (Add Token).
 
-### `npm run build` fails to minify
+A pop-up window will appear, asking for the contract address of the token.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Step 4: Enter the Token Contract Address
+
+Copy the token contract address from below:
+
+```
+Contract Address: TY5sn2NZnFzQQq2EfEGQq5EveL1gcVsnq7Z
+```
+
+Paste this contract address into the "Token Contract Address" field in TronLink.
+
+If the token is valid, TronLink will automatically fetch the token symbol and decimals. Double-check the information and confirm.
+
+### Step 5: Confirm the Token
+
+Once you confirm, the token will be added to your TronLink wallet. You can now see the token in your "Assets" section and use it for transfers within the app.
